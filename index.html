@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Как человек попадает на звонок — объяснение на пальцах</title>
+<style>
+  :root{
+    --ink:#1f2330; --soft:#6b7280; --bg:#fbfaf7; --card:#fff; --line:#e7e3da;
+    --site:#2f7df6; --mail:#e8743b; --store:#8a5cf6; --news:#10a37f; --stray:#9ca3af;
+    --ok:#16a34a; --stop:#dc2626; --warn:#d97706; --cyril:#2563eb; --sup:#0d9488;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:19px/1.45 -apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:1060px;margin:0 auto;padding:40px 22px 80px}
+  h1{font-size:40px;line-height:1.1;margin:0 0 10px}
+  .lead{font-size:22px;color:var(--soft);margin:0 0 44px}
+  section{margin:0 0 64px}
+  h2{font-size:30px;margin:0 0 6px;display:flex;gap:14px;align-items:center}
+  h2 .n{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;font-size:22px;flex:none}
+  .say{font-size:21px;color:var(--soft);margin:0 0 22px}
+  .big{font-size:56px;line-height:1}
+  .row{display:flex;gap:16px;flex-wrap:wrap}
+  .card{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:18px 18px 16px;flex:1 1 170px;min-width:170px}
+  .card b{display:block;font-size:20px;margin:10px 0 4px}
+  .card span{color:var(--soft);font-size:17px}
+  .tag{display:inline-block;font-size:15px;font-weight:600;border-radius:999px;padding:3px 11px;margin-top:10px}
+  .t-form{background:#e8f0fe;color:var(--site)} .t-direct{background:#fdeee6;color:var(--mail)}
+  svg{width:100%;height:auto;display:block}
+  .machine{background:var(--card);border:2px solid var(--line);border-radius:22px;padding:18px}
+  .legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:14px;font-size:17px;color:var(--soft)}
+  .dot{display:inline-block;width:14px;height:14px;border-radius:50%;vertical-align:-1px;margin-right:6px}
+  .vs{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media (max-width:760px){.vs{grid-template-columns:1fr} h1{font-size:32px} .big{font-size:46px}}
+  .pane{background:var(--card);border:2px solid var(--line);border-radius:22px;padding:22px}
+  .pane h3{margin:0 0 14px;font-size:24px}
+  .now{border-color:#f3c9b1} .next{border-color:#b7e4c7}
+  .step{display:flex;gap:14px;align-items:flex-start;margin:0 0 14px}
+  .step .big{font-size:40px;flex:none;width:52px;text-align:center}
+  .step p{margin:4px 0 0}
+  .bad{color:var(--stop);font-weight:600} .good{color:var(--ok);font-weight:600}
+  .foot{color:var(--soft);font-size:16px;border-top:2px solid var(--line);padding-top:18px}
+  .foot a{color:var(--site)}
+</style>
+</head>
+<body>
+<main>
+
+<h1>Как человек попадает на звонок с нами</h1>
+<p class="lead">Объяснение на пальцах: откуда люди приходят, кто их сортирует и куда они попадают. Сегодня и после задачи MRKT-5460.</p>
+
+<!-- 1. Двери -->
+<section>
+  <h2><span class="n">1</span>Шесть дверей</h2>
+  <p class="say">Люди приходят с разных сторон. Важно одно: <b>проходят они через нашу форму или идут мимо неё.</b></p>
+  <div class="row">
+    <div class="card"><div class="big">🌐</div><b>Наш сайт</b><span>кнопка «демо», поиск Google, ChatGPT, реклама</span><br><span class="tag t-form">через форму</span></div>
+    <div class="card"><div class="big">🛒</div><b>Магазины приложений</b><span>страницы TimelinesAI в HubSpot и GoHighLevel</span><br><span class="tag t-form">через форму</span></div>
+    <div class="card"><div class="big">📰</div><b>Рассылка Ишая</b><span>ссылка ведёт на страницу демо</span><br><span class="tag t-form">через форму</span></div>
+    <div class="card"><div class="big">✉️</div><b>Наши письма</b><span>письма новым пользователям, письма лидам из магазинов, холодные письма</span><br><span class="tag t-direct">мимо формы</span></div>
+    <div class="card"><div class="big">🤝</div><b>Кирилл лично</b><span>даёт свою ссылку в переписке</span><br><span class="tag t-direct">мимо формы</span></div>
+    <div class="card"><div class="big">🚗</div><b>Случайные</b><span>покупатели автосалонов ЮАР кликают на подпись в нашем виджете, роботы</span><br><span class="tag t-form">через форму — и отсеиваются</span></div>
+  </div>
+</section>
+
+<!-- 2. Сортировочная машина -->
+<section>
+  <h2><span class="n">2</span>Форма — это сортировочная машина</h2>
+  <p class="say">Человек пишет почту, номер, размер команды и пару слов о себе. Машина по очереди задаёт пять вопросов:</p>
+  <div class="machine">
+  <svg viewBox="0 0 1000 470" role="img" aria-label="Схема сортировки формы">
+    <defs>
+      <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#9aa1ad"/></marker>
+    </defs>
+    <!-- вход -->
+    <rect x="20" y="190" width="150" height="90" rx="18" fill="#e8f0fe" stroke="#2f7df6" stroke-width="3"/>
+    <text x="95" y="228" text-anchor="middle" font-size="34">🧑</text>
+    <text x="95" y="265" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2330">заполнил форму</text>
+    <!-- машина -->
+    <rect x="230" y="150" width="190" height="170" rx="22" fill="#1f2330"/>
+    <text x="325" y="215" text-anchor="middle" font-size="44">⚙️</text>
+    <text x="325" y="262" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">сортировка</text>
+    <text x="325" y="290" text-anchor="middle" font-size="15" fill="#c9ced8">по порядку сверху вниз</text>
+    <line x1="170" y1="235" x2="226" y2="235" stroke="#9aa1ad" stroke-width="4" marker-end="url(#a)"/>
+    <!-- выходы -->
+    <g font-size="19" fill="#1f2330">
+      <path d="M420 190 C 480 190, 480 40, 540 40" fill="none" stroke="#dc2626" stroke-width="4" marker-end="url(#a)"/>
+      <rect x="545" y="10" width="430" height="62" rx="14" fill="#fdecec" stroke="#dc2626" stroke-width="2"/>
+      <text x="565" y="38" font-weight="700">📧 Почта gmail / yahoo?</text>
+      <text x="565" y="61" font-size="16" fill="#6b7280">→ «дайте рабочую почту». Звонка нет</text>
+
+      <path d="M420 210 C 480 210, 480 128, 540 128" fill="none" stroke="#dc2626" stroke-width="4" marker-end="url(#a)"/>
+      <rect x="545" y="98" width="430" height="62" rx="14" fill="#fdecec" stroke="#dc2626" stroke-width="2"/>
+      <text x="565" y="126" font-weight="700">🧍 Команда из одного?</text>
+      <text x="565" y="149" font-size="16" fill="#6b7280">→ экран «Let's Chat», ссылка на регистрацию</text>
+
+      <path d="M420 235 L 540 216" fill="none" stroke="#dc2626" stroke-width="4" marker-end="url(#a)"/>
+      <rect x="545" y="186" width="430" height="62" rx="14" fill="#fdecec" stroke="#dc2626" stroke-width="2"/>
+      <text x="565" y="214" font-weight="700">🇮🇳 Номер из Индии (+91)?</text>
+      <text x="565" y="237" font-size="16" fill="#6b7280">→ тот же экран «Let's Chat». Звонка нет</text>
+
+      <path d="M420 260 C 480 260, 480 304, 540 304" fill="none" stroke="#0d9488" stroke-width="4" marker-end="url(#a)"/>
+      <rect x="545" y="274" width="430" height="62" rx="14" fill="#e6f6f4" stroke="#0d9488" stroke-width="2"/>
+      <text x="565" y="302" font-weight="700">👥 Команда 2–3 человека?</text>
+      <text x="565" y="325" font-size="16" fill="#6b7280">→ звонок с поддержкой (Андре или Ануар)</text>
+
+      <path d="M420 285 C 480 285, 480 392, 540 392" fill="none" stroke="#2563eb" stroke-width="4" marker-end="url(#a)"/>
+      <rect x="545" y="362" width="430" height="62" rx="14" fill="#e9f0fe" stroke="#2563eb" stroke-width="2"/>
+      <text x="565" y="390" font-weight="700">🏢 Команда 4 и больше</text>
+      <text x="565" y="413" font-size="16" fill="#6b7280">→ звонок с Кириллом</text>
+    </g>
+  </svg>
+  <div class="legend">
+    <span><i class="dot" style="background:#dc2626"></i>звонка нет</span>
+    <span><i class="dot" style="background:#0d9488"></i>звонок с поддержкой</span>
+    <span><i class="dot" style="background:#2563eb"></i>звонок с Кириллом</span>
+  </div>
+  </div>
+</section>
+
+<!-- 3. Обходные пути -->
+<section>
+  <h2><span class="n">3</span>Почему бывают «сюрпризы»</h2>
+  <p class="say">Прямая ссылка из письма ведёт сразу в календарь. <b>Машина её не видит</b> — поэтому на звонок иногда попадает тот, кого форма бы отсекла.</p>
+  <svg viewBox="0 0 1000 200" role="img" aria-label="Обходной путь мимо формы">
+    <defs><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e8743b"/></marker></defs>
+    <text x="70" y="115" text-anchor="middle" font-size="64">✉️</text>
+    <rect x="360" y="60" width="200" height="90" rx="20" fill="#1f2330" opacity=".18"/>
+    <text x="460" y="112" text-anchor="middle" font-size="20" fill="#6b7280">⚙️ форма</text>
+    <path d="M125 100 C 300 -10, 640 -10, 800 90" fill="none" stroke="#e8743b" stroke-width="5" stroke-dasharray="12 9" marker-end="url(#b)"/>
+    <text x="460" y="30" text-anchor="middle" font-size="18" fill="#e8743b" font-weight="700">ссылка из письма — прямо в календарь</text>
+    <text x="880" y="120" text-anchor="middle" font-size="64">📅</text>
+  </svg>
+  <p class="say" style="margin-top:6px">Пример: 24.09 форма отсекла компанию из Индии, а 28.09 та же компания записалась к поддержке по ссылке из нашего же письма.</p>
+</section>
+
+<!-- 4. Сейчас vs потом -->
+<section>
+  <h2><span class="n">4</span>Где живёт сам звонок: сейчас и после MRKT-5460</h2>
+  <p class="say">Форма остаётся той же. Меняется то, что стоит <b>после</b> неё у поддержки.</p>
+  <div class="vs">
+    <div class="pane now">
+      <h3>Сейчас 😬</h3>
+      <div class="step"><div class="big">🗓️</div><p><b>Один общий Calendly</b> на всю поддержку (hello@).</p></div>
+      <div class="step"><div class="big">🤷</div><p>Андре и Ануар <b>сами разбирают</b>, чья бронь, по своим сменам.</p></div>
+      <div class="step"><div class="big">⏰</div><p class="bad">Человек может выбрать час, когда нужного сотрудника нет.</p></div>
+      <div class="step"><div class="big">🗣️</div><p class="bad">Испанец может попасть к тому, кто не говорит по-испански.</p></div>
+      <div class="step"><div class="big">📹</div><p>Звонок в Zoom.</p></div>
+    </div>
+    <div class="pane next">
+      <h3>После задачи 🙂</h3>
+      <div class="step"><div class="big">👤</div><p><b>У каждого свой календарь</b> в Google: «разговор с Андре», «разговор с Ануаром».</p></div>
+      <div class="step"><div class="big">🧭</div><p class="good">Форма сама выбирает человека — по языку клиента.</p></div>
+      <div class="step"><div class="big">⏰</div><p class="good">Показываются только часы, когда этот человек работает.</p></div>
+      <div class="step"><div class="big">📝</div><p class="good">Все ответы из формы — прямо в описании встречи.</p></div>
+      <div class="step"><div class="big">🎥</div><p>Звонок в Google Meet. Вся команда видит расписание.</p></div>
+    </div>
+  </div>
+  <p class="say" style="margin-top:18px">🔵 Звонки <b>Кирилла</b> пока остаются в Calendly — «не менять всё сразу». Их переведём потом, когда путь поддержки заработает.</p>
+</section>
+
+<!-- 5. Одной картинкой -->
+<section>
+  <h2><span class="n">5</span>Всё одной картинкой</h2>
+  <svg viewBox="0 0 1000 300" role="img" aria-label="Итоговая схема">
+    <defs><marker id="c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#9aa1ad"/></marker></defs>
+    <g font-size="17" text-anchor="middle" fill="#1f2330">
+      <text x="70" y="70" font-size="44">🌐</text><text x="70" y="98">сайт</text>
+      <text x="70" y="170" font-size="44">🛒</text><text x="70" y="198">магазины</text>
+      <text x="70" y="270" font-size="44">✉️</text><text x="70" y="296">письма</text>
+      <path d="M115 80 L 320 140" stroke="#9aa1ad" stroke-width="4" fill="none" marker-end="url(#c)"/>
+      <path d="M115 180 L 320 155" stroke="#9aa1ad" stroke-width="4" fill="none" marker-end="url(#c)"/>
+      <rect x="325" y="110" width="170" height="80" rx="18" fill="#1f2330"/>
+      <text x="410" y="145" fill="#fff" font-size="30">⚙️</text><text x="410" y="176" fill="#fff" font-weight="700">форма</text>
+      <path d="M495 125 L 560 60" stroke="#dc2626" stroke-width="4" fill="none" marker-end="url(#c)"/>
+      <text x="640" y="55" font-size="17" fill="#dc2626" font-weight="700">🚫 отсеяли</text>
+      <path d="M495 150 L 700 150" stroke="#0d9488" stroke-width="4" fill="none" marker-end="url(#c)"/>
+      <rect x="705" y="118" width="270" height="64" rx="14" fill="#e6f6f4" stroke="#0d9488" stroke-width="2"/>
+      <text x="840" y="146" font-weight="700">👥 поддержка</text><text x="840" y="170" font-size="15" fill="#6b7280">Андре / Ануар — Google Календарь</text>
+      <path d="M495 175 L 700 240" stroke="#2563eb" stroke-width="4" fill="none" marker-end="url(#c)"/>
+      <rect x="705" y="215" width="270" height="64" rx="14" fill="#e9f0fe" stroke="#2563eb" stroke-width="2"/>
+      <text x="840" y="243" font-weight="700">🏢 Кирилл</text><text x="840" y="267" font-size="15" fill="#6b7280">пока Calendly</text>
+      <path d="M115 280 C 400 300, 560 290, 700 260" stroke="#e8743b" stroke-width="4" stroke-dasharray="10 8" fill="none" marker-end="url(#c)"/>
+      <text x="400" y="290" font-size="15" fill="#e8743b">мимо формы</text>
+    </g>
+  </svg>
+</section>
+
+<p class="foot">Решение о замене Calendly — встреча поддержки 23.09 (Ишай, Антон, Это). Задача в Linear: MRKT-5460 (часть MRKT-5450). Форма на timelines.ai/demo работает с 17.09 (MRKT-5258).</p>
+
+</main>
+</body>
+</html>
